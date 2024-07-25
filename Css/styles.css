@@ -1,0 +1,573 @@
+* {
+    box-sizing: border-box;
+}
+
+
+:root {
+    --border-main-color:#008248;
+    --font-main-color: #000;
+    --background-color:#fff;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: SoDo;
+    color:#1f1f1f;
+    font-size: 13px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+body, h1, h2, h3, div, span, li, ul, button, input, textarea, a, svg{
+    margin: 0;
+    padding: 0;
+}  
+
+li, a {
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+}
+
+/* ---- HEADER SECTION ---- */
+
+/* --- LEFT SIDE --- */
+
+.header__nav {
+    font-weight: 700;
+    display: flex;
+    position: relative;
+    z-index: 2;
+    align-items: center;
+    padding: 1.5rem 2.5rem 1rem 2.5rem;
+    box-shadow: 0 .2rem .2rem 0 rgba(0,0,0,.12);
+}
+
+.nav__wrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 3rem;
+}
+
+.nav__items {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__primary-navigation {
+    margin-right: 1rem;
+    text-transform: uppercase;
+    
+}
+
+.nav__items-switcher {
+    height: 100%;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+
+
+.primary-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    letter-spacing: 2px;
+}
+
+
+.arrow-container {
+    width: 100%;
+}
+
+.arrow-icon {
+    margin-left: .2rem;
+    width: 1rem;
+}
+
+.collapsible-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__icon-container {
+    width: 100%;
+    
+}
+
+.header__logo {
+    width: 3.2rem; 
+}
+
+
+
+
+
+/* --- RIGHT SIDE --- */
+
+
+.secondary-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+
+
+.primary-icon {
+    width: 100%;
+}
+
+
+.header__icon-secondary {
+    width: 1.2rem;
+}
+
+.find-a-store-button {
+    margin-right: .4rem;
+}
+
+.find-store-link {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .8rem .4rem;
+    font-size: .9rem;
+}
+
+
+.primary-icon {
+    width: 2.2rem;
+    align-self: center;
+    justify-self: center;
+}
+
+.button-label {
+    width: 100%;
+    align-self: flex-start;
+}
+
+.login-button {
+    margin-right: .4rem;
+}
+
+/* --- Multiple Items Class --- */
+
+.icon {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.abstract__button {
+    text-decoration: none;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.primary-button {
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 100rem;
+    padding: .3rem 1rem;
+    font-size: .9rem;
+    line-height: 1;
+}
+
+
+.secondary-button {
+    border: 1px solid #000;
+    border-radius: 100rem;
+    padding: .3rem 1rem;
+    font-size: .9rem;
+    line-height: 1;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.secondary-button-green {
+    transition: background .5s;
+    border: 1px solid #008248;
+    color: #008248;
+}
+
+
+/* ---- HEADER SECTION ENDS ---- */
+
+
+
+/* ---- MAIN SECTION ---- */
+
+
+/* --- main wrapper --- */
+
+.content-wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.grid-24 {
+    display: flex;
+}
+
+
+
+/* --- left side --- */
+
+
+
+.sidebar {
+    position: sticky;
+    top:0;
+    height: 100dvh;
+}
+
+.c01-vertical-card {
+    height: 100%;
+    width: 45rem;
+}
+
+
+.c01-vertical-card .wrapper {
+    height: auto;
+    width: 100%;
+    position: relative;
+    max-height: 80dvh;
+}
+
+.c01-vertical-card .image {
+    left: 0;
+    top: 0;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    mask-image: linear-gradient(180deg,#000 60% , #0000007a 100%);
+}
+
+
+
+.c01-vertical-card .sticky-content {
+    height: auto;
+    width: 100%;
+    bottom: 0;
+    color: #008248;
+
+    position: absolute;
+    padding-left: calc(4.16667% + 4rem);
+    padding-right: calc(4.16667% + .01667rem);
+    padding-bottom: 3.2rem;
+}
+
+.c01-vertical-card .call-to-actions {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.cta-left {
+    border: 1px solid #008248;
+    text-shadow: 0 0 20px #00000066;
+}
+
+.c01-vertical-card .call-to-actions>li {
+    margin-top: 1.6rem;
+}
+
+
+
+/* --- right side --- */
+/* First row */
+.main {
+    z-index: auto;
+}
+
+
+.main-blocks {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+
+
+
+.c02-horizontal-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.c02-horizontal-card .content {
+    width: 100%;
+    padding: 3.2rem .5rem;
+    padding-top: 2.3rem;
+}
+
+.c02-horizontal-card .image {
+    position: relative;
+    max-height: 50dvh;
+}
+
+.grid-15 {
+    display: flex;
+}
+
+.col-13 h2 {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+/* Second row */
+
+.col-m-7 .heading-04 {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.heading-04 ~ p:last-of-type {
+    padding-bottom: 5rem;
+}
+
+.heading-04 ~ p {
+    font-size: .8rem;
+    color: #6c6c6c;
+}
+
+/* third row */
+
+.c06-cards-grid {
+    padding: 3.2rem 0;
+}
+
+.articles {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.article .heading-04 {
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+
+.article .heading-04 ~ p {
+    padding: 0;
+    max-width: 300px;
+    font-size: .9rem;
+}
+
+.c06-cards-grid .article {
+    background: #fff;
+    box-shadow: 0 0.2rem 0.8rem 0.1rem hsla(0,0%,42.4%,.11), 0 0.1rem 0.1rem 0 #ccc;
+    margin-bottom: 3.2rem;
+}
+
+.c06-cards-grid .image {
+    background: #edebe9;
+    margin-bottom: 2.4rem;
+}
+
+.c06-cards-grid .image {
+    position: relative;
+    width: 100%;
+}
+
+.c06-cards-grid .article-detail {
+    padding: 0 2.4rem 2.4rem;
+}
+
+.c06-cards-grid .article-description {
+    margin-bottom: 1.6rem;
+    color: #6c6c6c;
+}
+
+
+/* Footer */
+
+
+.heading-03 {
+    font-weight: 600;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.social-list svg {
+    width: 40px;
+    filter:contrast(70%);
+    transition: opacity .3s;
+}
+.social-list {
+    gap: .8rem;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.collapsible-button {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.collapsible-button svg {
+    transition: transform .5s;
+}
+
+.chevron-footer-arrow {
+    background-color: transparent;
+    border: none;
+    border-radius: 100%;
+    padding: .7rem;
+}
+.n02-footer .ui-divider {
+    border: .1rem solid #ccc;
+}
+
+
+.footer-menu {
+    width: 100%;
+    position: relative;
+    padding-right: 3.5rem;
+}
+
+.n02-footer .footer-menu-item:not(:last-child) {
+    padding-bottom: 4.8rem;
+}
+
+.n02-footer .ui-divider {
+    margin-top: 4rem;
+}
+/* --- Multiple Items Class --- */
+.c06-cards-grid {
+    margin-right: 7rem;
+}
+
+.c10-two-cols-text-image {
+    margin-right: 5rem;
+}
+
+.grid-15 >.col-l-push-1 {
+    margin-left: 6%;
+}
+
+.content-wrapper .breakout-right {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.grid-15>.col-l-14 {
+    max-width: 93.33333%;
+    flex-basis: 93.33333%;
+}
+
+.c10-two-cols-text-image .item:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.two-third-wrapper .content {
+    position: relative;
+}
+
+
+.image img {
+    width: 100%;
+    min-width: 500px;
+}
+
+.image {
+    width: 100%;
+    display: inline-block;
+}
+
+.fit-cover {
+    top :0;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    object-fit: cover;
+}
+
+
+.description {
+    color: #666;
+    margin-bottom: 2.4rem;
+}
+
+.background {
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.background .theme-naturalGray {
+    background:#f7f7f7;
+}
+
+/* ---- MAIN SECTION ENDS ---- */
+
+
+
+/* ---- JAVASCRIPT CLASSES ---- */
+
+
+.hidden {
+    display: none;
+}
+
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+
+
+
+/* ---- HOVER CLASSES AND PSEUDOCLASSES ---- */
+
+
+.chevron-footer-arrow:hover {
+    background-color: #eeeeee;
+}
+
+.secondary-button-green:hover {
+    background-color: #00824833;
+}
+
+
+.nav__primary-navigation:hover {
+    color: #0c4b2f;
+}
+
+
+.cta-left:hover {
+    background-color: #00824833;
+}
+
+
+.social-list svg:hover {
+    opacity: .9;
+}
+
+
