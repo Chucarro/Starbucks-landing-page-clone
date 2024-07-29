@@ -1,0 +1,311 @@
+
+
+
+/* Laptops and large tablets */
+
+@media (max-width:1200px) {
+    .main-blocks {
+        width: 60dvw;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .grid-24 {
+        grid-template-columns: 1fr 1fr;
+    }
+    /* left side container  cta buttons*/
+    .c01-vertical-card .sticky-content {
+        padding-left: calc(3.16667% + 1rem);
+        padding-right: calc(4.16667% + .01rem);
+}   /* rigth side container text*/
+    .c02-horizontal-card .content {
+        padding-right: 1rem;
+}   /* Second row img*/
+    .c10-two-cols-text-image .image {
+        min-width: 250px;
+}
+    
+    .col-m-7 .heading-04 {
+        font-size: 1.1rem;
+        padding-bottom: 1rem;
+    }
+    
+    .heading-04 ~ p:last-of-type {
+        padding-bottom: 2rem;
+    }
+    
+    .heading-04 ~ p {
+        font-size: .6rem;
+    }
+    .c10-two-cols-text-image {
+        margin-right: 2rem;
+    }
+    .c10-two-cols-text-image .secondary-button {
+        font-size: .8rem;
+    }
+    .article .heading-04 {
+        font-size: 1.1rem;
+    }
+    
+    .c06-cards-grid .article-description {
+        margin-bottom: .3rem;
+    }
+    .c06-cards-grid .article-detail {
+        padding: 0 2.2rem 2.2rem;
+    }
+}
+
+/* Tablets and large smarthpones */
+
+@media (max-width:992px) {
+    .arrow-container {
+        display: block;
+    }
+    .dropdown-navigation-item {
+        display: block;
+    }
+    .hide-on-tablet-lg {
+        display: none;
+    }
+    .main-blocks {
+        width: 100%;
+    }
+    .grid-24 {
+        grid-template-columns: 1fr;
+    }
+    
+    .sidebar {
+        position: relative;
+        height: 100%;
+    }
+    
+    .c01-vertical-card {
+        max-height: 500px;
+        width: 100%;
+    }
+    
+    .c01-vertical-card .wrapper {
+        position: relative;
+    }
+    .c01-vertical-card .fit-cover {
+        object-position: 0 -9rem;
+    }
+    .c01-vertical-card .image {
+        height: 500px;
+        width: 100%;
+    }
+    .c01-vertical-card .call-to-actions {
+        flex-direction: row;
+        justify-content: center;
+        gap: 12px;
+    }
+    .c01-vertical-card .sticky-content {
+        width: 100%;
+        bottom: 8rem;
+        color: #fff;
+        position: relative;
+        justify-content: center;
+    }
+    .cta-left {
+        border: 1px solid #fff;
+    }
+    .cta-left:hover {
+        background: #ffffff55;
+    }
+    .col-m-7 .image {
+        min-width: 360px;
+}
+    
+    .col-m-7 .heading-04 {
+        font-size: 1.4rem;
+    }
+    
+    .heading-04 ~ p:last-of-type {
+        padding-bottom: 2rem;
+    }
+    
+    .heading-04 ~ p {
+        font-size: .9rem;
+    }
+    .c10-two-cols-text-image .secondary-button {
+        font-size: .9rem;
+    }
+    .article .heading-04 {
+        font-weight: 400;
+        font-size: 1.4rem;
+        margin: 0;
+    }
+    
+    
+    .article .heading-04 ~ p {
+        padding: 0;
+        max-width: 300px;
+        font-size: 1rem;
+        padding-bottom: 2rem;
+    }
+    .dropdown-list{
+        display: flex;
+    }
+    .dropdown-list li:first-of-type {
+        display: none;
+    }
+    
+}
+
+
+@media (max-width:865px) {
+    .hide-on-tablet-md {
+        display: none;
+    }
+
+    .dropdown-list li:first-of-type {
+        display: block;
+    }
+}
+
+
+@media (max-width:768px) {
+    .main {
+        overflow:hidden;
+    }
+    body.no-scroll {
+        overflow: hidden;
+    }
+    .nav__items {
+        display: none;
+    }
+    .button-icon, .icon-button {
+        display: block;
+    }
+    .mobile-menu {
+        display: block;
+    }
+    .col-l-14 .grid-15 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .c10-two-cols-text-image .grid-15 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .col-m-7 .image {
+        max-width:300px;
+}
+    .col-m-7 .heading-04 {
+        padding-top: 1rem;
+    }
+    .col-m-7 .heading-04 ~ p {
+        margin: 0;
+        max-width: 400px;
+        padding: 0 1rem .4rem 1rem;
+    }
+    .col-m-7 .heading-04 ~ p:last-of-type {
+        padding-bottom: 1.2rem;
+    }
+    .c10-two-cols-text-image .secondary-button {
+        font-size: 1.1rem;
+        margin-top: .3rem;
+    }
+    .articles {
+        flex-direction: column;
+    }
+    .article .heading-04 {
+        font-weight: 400;
+        font-size: 2rem;
+        margin: 0;
+    }
+    .article .heading-04 ~ p {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: .6rem auto .2rem auto;
+    }
+    .article a{
+        font-size: 1.2rem;
+    }
+    .col-13 h2 {
+        font-size: 2.5rem;
+    }
+    .col-13 p {
+        font-size: 1.2rem;
+    }
+    
+    .call-to-actions a {
+        font-size: 1.2rem;
+    }
+    .footer-menu {
+        padding: .5rem;
+    }
+
+    .c01-vertical-card .sticky-content {
+        padding:0 ;
+    }
+    .grid-15{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .social-list {
+        justify-content: center;
+    }
+}
+
+@media (max-width:468px) {
+    .c01-vertical-card .call-to-actions>li {
+        margin: 0;
+    }
+    .c01-vertical-card .fit-cover {
+        object-position: top;
+    }
+    .sticky-content .call-to-actions a {
+        font-size: .6rem;
+        margin: 0;
+    }
+    .c01-vertical-card .sticky-content {
+        bottom: 6rem;
+    }
+    .social-list svg {
+        max-width: 30px;
+    }
+    .social-list {
+        gap: .3rem;
+    }
+    .articles {
+        align-items: center;
+        justify-content: center;
+    }
+    .article {
+        max-width: 300px;
+    }
+    .article .heading-04 {
+        font-size: 1.2rem;
+    }
+    
+    .article .heading-04 ~ p {
+        padding: 0;
+        max-width: 300px;
+        font-size: 1rem;
+        padding-bottom: 2rem;
+    }
+    .article a {
+        font-size: .6rem;
+    }
+    .c06-cards-grid .image {
+        margin-bottom: 2rem;
+    }
+    .c06-cards-grid .article-detail {
+        padding: 0 1.2rem 1.2rem;
+    }
+    .col-m-7 .image {
+        min-width:100px;
+    }
+    .c06-cards-grid {
+         margin-right: 0rem;
+    }
+    .grid-15 >.col-l-push-1 {
+        margin:0;
+    }
+    .c10-two-cols-text-image {
+        margin-right: 0;
+    }
+}
