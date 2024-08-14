@@ -11,6 +11,10 @@
     zoom:0%;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: SoDo;
     color:#1f1f1f;
