@@ -760,7 +760,7 @@ a {
 .mobile-menu {
     position: fixed;
     top: 5.1rem;
-    right: -70%;
+    right: -80%;
     width: 70vw; 
     height: 100%; 
     background: white; 
