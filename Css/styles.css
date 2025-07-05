@@ -666,13 +666,12 @@ a {
 
 .footer-arrow {
     transition: transform .3s ease;
-
+}
 .footer-arrow {
     transition: transform .3s ease;
 }
 
 
-.rotated {
 .rotated {
     transform: rotate(180deg);
 }
