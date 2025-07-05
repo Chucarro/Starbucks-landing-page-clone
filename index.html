@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="author" content="Agustin Chucarro" />
+        <meta name="keywords" content="coffee drink chill modern bussinnes worldwide" />
         <link rel="icon" href="./Img/starbucks.png" type="image/x-png"/>
         <link rel="stylesheet" href="./Css/styles.css"/>
         <link rel="stylesheet" href="./Css/fonts.css" />
@@ -25,16 +27,16 @@
                             <ul class="primary-navigation">
                                 <li class="nav__primary-navigation"><a href="#">Menu</a></li>
                                 <li class="nav__primary-navigation"><a href="#">Nutrition</a></li>
-                                <li class="nav__primary-navigation" hidden><a href="#">Delivers</a></li>
-                                <li class="nav__primary-navigation" hidden><a href="#">Rewards</a></li>
-                                <li class="nav__primary-navigation"><div class="nav__items-switcher">
+                                <li class="nav__primary-navigation hide-on-tablet-md"><a href="#">Delivers</a></li>
+                                <li class="nav__primary-navigation hide-on-tablet-lg"><a href="#">Rewards</a></li>
+                                <li class="nav__items-dropdown"><div class="nav__items-switcher">
                                     <div class="abstract-button collapsible-button">
                                         <span class="dropdown-navigation-item">More</span>
                                         <div class="arrow-container"><img class="icon arrow-icon icon" src="./Img/down-arrow.png"></div>
                                     </div>
-                                    <ul class="js-collapsible dropdown-list is-active" hidden>
+                                    <ul class="js-collapsible dropdown-list">
                                         <li class="nav__primary-navigation"><a href="#">Delivers</a></li>
-                                <li class="nav__primary-navigation"><a href="#">Rewards</a></li>
+                                        <li class="nav__primary-navigation"><a href="#">Rewards</a></li>
                                     </ul>
                                 </div></li>
                             </ul>
@@ -45,9 +47,14 @@
                                 <li class="header__button"><a class="primary-button abstract-button" href="#">Join now</a></li>
                             </ul>
                         </div>
+                        <button data-element-id="" class="abstract-button icon-button mobile-navigation js-mobile-menu-button" type="button" data-theme="light" data-component="icon-button">
+                            <div class="icon-wrapper">
+                        <span class="icon button-icon" data-component="icon" data-icon="hamburger"><svg viewBox="0 0 24 24" class="valign-middle" aria-hidden="true"><path d="M21 6.9H3c-.5 0-.9-.4-.9-.9s.4-.9.9-.9h18c.5 0 .9.4.9.9s-.4.9-.9.9z" class="top"></path><path d="M21 12.9H3c-.5 0-.9-.4-.9-.9s.4-.9.9-.9h18c.5 0 .9.4.9.9s-.4.9-.9.9z" class="middle"></path><path d="M21 18.9H3c-.5 0-.9-.4-.9-.9s.4-.9.9-.9h18c.5 0 .9.4.9.9s-.4.9-.9.9z" class="bottom"></path></svg></span>
+                            </div>
+                        </button>
                     </div>
                 </nav>
-                <div class="mobile-menu" hidden>
+                <div class="mobile-menu">
                     <div class="navigation-panels">
                         <div class="navigation-panel">
                             <ul class="primary-mobile-navigation">
@@ -56,7 +63,7 @@
                                 <li><a href="#" class="abstract-button link-button">Delivers</a></li>
                                 <li><a href="#" class="abstract-button link-button">Rewards</a></li>
                             </ul>
-                            <hr>
+                            <hr class="mobile-divider">
                             <div class="secondary-mobile-navigation">
                                 <ul>
                                     <li class="login-button">
@@ -84,10 +91,10 @@
                         <section class="vertical-card c01-vertical-card">
                             <div class="wrapper js-wrapper">
                                 <picture class="image breakout-left">
-                                <source class="js-small-image" media="(max-width: 768px)" data-srcset="https://www.starbucks.co.uk/sites/starbucks-uk/files/styles/c01_vertical_card_mobile_portrait/public/2024-07/3390%20UK%20SUM24%20II%20Web-Delivery%20banners%20-%20Side%20Banner_724x1009px_v02_Rewards_0.jpg.webp?itok=eKJYbTGt" srcset="https://www.starbucks.co.uk/sites/starbucks-uk/files/styles/c01_vertical_card_mobile_portrait/public/2024-07/3390%20UK%20SUM24%20II%20Web-Delivery%20banners%20-%20Side%20Banner_724x1009px_v02_Rewards_0.jpg.webp?itok=eKJYbTGt">
-                                <img data-src="https://www.starbucks.co.uk/sites/starbucks-uk/files/styles/c01_vertical_card_724x1009/public/2024-07/3390%20UK%20SUM24%20II%20Web-Delivery%20banners%20-%20Side%20Banner_724x1009px_v02_Rewards_0.jpg.webp?itok=BSUWM2Hm" alt="Try this summer's coldest remixes and keep collecting Stars" class="fit-cover ls-is-cached lazyloaded left-image-shadow" src="https://www.starbucks.co.uk/sites/starbucks-uk/files/styles/c01_vertical_card_724x1009/public/2024-07/3390%20UK%20SUM24%20II%20Web-Delivery%20banners%20-%20Side%20Banner_724x1009px_v02_Rewards_0.jpg.webp?itok=BSUWM2Hm">
+                                <source class="js-small-image" media="(max-width: 468px)" srcset="./Img/Vertical.jpg">
+                                <img data-src="./Img/Vertical.jpg" src="./Img/Vertical.jpg">
                                 </picture>
-                                <div class="sticky-content js-sticky-content" style="width: 644px; position: fixed;">
+                                <div class="sticky-content js-sticky-content">
                                     <ul class="call-to-actions">
                                         <li><a class="abstract-button secondary-button js-cta cta-left" href="#">
                                             <span class="button-label">Find out more about Starbucks® Rewards</span>
@@ -104,8 +111,8 @@
                     <div class="main-blocks">
                         <section class="two-third-wrapper c02-horizontal-card">
                             <div class="background theme-naturalGray breakout-right"></div>
-                            <picture class="image breakout-right"> <source class="js-small-image" media="(max-width: 768px)" data-srcset="https://www.starbucks.co.uk/sites/starbucks-uk/files/styles/c02_horizontal_card_mobile_563x225/public/2024-07/3390%20UK%20SUM24%20II%20Web-Delivery%20banners%20-%20Hero%20Banner%201335x534px_v01.jpg.webp?itok=wqiplRRh" srcset="https://www.starbucks.co.uk/sites/starbucks-uk/files/styles/c02_horizontal_card_mobile_563x225/public/2024-07/3390%20UK%20SUM24%20II%20Web-Delivery%20banners%20-%20Hero%20Banner%201335x534px_v01.jpg.webp?itok=wqiplRRh">
-                            <img data-src="https://www.starbucks.co.uk/sites/starbucks-uk/files/styles/c02_horizontal_card_1335x534/public/2024-07/3390%20UK%20SUM24%20II%20Web-Delivery%20banners%20-%20Hero%20Banner%201335x534px_v01.jpg.webp?itok=piiAYFiW" alt="our summer classics remix" class="fit-cover ls-is-cached lazyloaded" src="https://www.starbucks.co.uk/sites/starbucks-uk/files/styles/c02_horizontal_card_1335x534/public/2024-07/3390%20UK%20SUM24%20II%20Web-Delivery%20banners%20-%20Hero%20Banner%201335x534px_v01.jpg.webp?itok=piiAYFiW"></picture>
+                            <picture class="image breakout-right"> <source class="js-small-image" media="(max-width: 468px)" data-srcset="./Img/Banner 1.webp" srcset="./Img/Banner 1.webp">
+                            <img data-src="./Img/Banner 1.webp" alt="our summer classics remix" class="fit-cover ls-is-cached lazyloaded" src="./Img/Banner 1.webp"></picture>
                             <div class="content">
                                 <div class="grid-15">
                                     <div class="col-l-push-1 col-1-14 col-13">
@@ -128,16 +135,15 @@
                                 <div class="item grid-15">
                                     <div class="col-m-7 col-l-push-1">
                                         <picture class="image item-image">
-                                            <source class="js-small-image" media="(max-width: 768px)" data-srcset="https://www.starbucks.co.uk/sites/starbucks-uk/files/styles/c10_2_col_text_mobile_503x420/public/2024-07/3390%20UK%20SUM24%20II%20Web-Delivery%20banners%20-%20Rectangle%20Banner%201120x934px_v01.jpg.webp?itok=58N-22Rk" srcset="https://www.starbucks.co.uk/sites/starbucks-uk/files/styles/c10_2_col_text_mobile_503x420/public/2024-07/3390%20UK%20SUM24%20II%20Web-Delivery%20banners%20-%20Rectangle%20Banner%201120x934px_v01.jpg.webp?itok=58N-22Rk">
+                                            <source class="js-small-image" media="(max-width: 768px)" data-srcset="./Img/Sec 4.webp" srcset="./Img/Sec 4.webp">
 
-                                            <img data-src="https://www.starbucks.co.uk/sites/starbucks-uk/files/styles/c10_2_col_text_560x467/public/2024-07/3390%20UK%20SUM24%20II%20Web-Delivery%20banners%20-%20Rectangle%20Banner%201120x934px_v01.jpg.webp?itok=VI5xq6-t" alt="Remix a summer classic. Starbucks Delivers." class="fit-cover ls-is-cached lazyloaded" src="https://www.starbucks.co.uk/sites/starbucks-uk/files/styles/c10_2_col_text_560x467/public/2024-07/3390%20UK%20SUM24%20II%20Web-Delivery%20banners%20-%20Rectangle%20Banner%201120x934px_v01.jpg.webp?itok=VI5xq6-t">
+                                            <img loading="lazy" data-src="./Img/Sec 4.webp" alt="Remix a summer classic. Starbucks Delivers." class="fit-cover ls-is-cached lazyloaded" src="./Img/Sec 4.webp">
                                         </picture>
                                     </div>
                                     <div class="col-m-7 col-l-6 col-l-push-1 col-m-push-1">
                                         <div class="rich-text copy-02">
-                                            <h3 class="title heading-04 bold">Starbucks® Delivers</h3>
-                                            <p>There's no better time to try something new for summer!</p>
-                                            <p>Order with Uber Eats, Deliveroo or Just Eat to get your favourite drinks delivered straight to your door.</p>
+                                            <h3 class="title heading-04 bold">Now serving summer...</h3>
+                                            <p>Our new sweet melon flavour Refresha® drink base poured over ice and combined with juicy pops of melon flavour pearls - a delicious choice for Summer! Subject to availability, whilst stocks last. Serveware varies from image shown. Caution: Pearls may be a potential choking hazard - not suitable for young children.</p>
                                             <a class="abstract-button secondary-button call-to-action js-cta secondary-button-green"><span class="copy-02 semi-bold button-label">Order now</span></a>
                                         </div>
                                     </div>
@@ -145,17 +151,16 @@
                                 <div class="item grid-15">
                                     <div class="col-m-7 col-l-push-1">
                                         <picture class="image item-image">
-                                            <source class="js-small-image" media="(max-width: 768px)" data-srcset="https://www.starbucks.co.uk/sites/starbucks-uk/files/styles/c10_2_col_text_mobile_503x420/public/2023-03/3190%20UK%20AH%20Oleato%20Digital%20Adapts%20Square%20Banner%201120x934px_v02.jpg.webp?itok=A7AvvMus" srcset="https://www.starbucks.co.uk/sites/starbucks-uk/files/styles/c10_2_col_text_mobile_503x420/public/2023-03/3190%20UK%20AH%20Oleato%20Digital%20Adapts%20Square%20Banner%201120x934px_v02.jpg.webp?itok=A7AvvMus">
+                                            <source class="js-small-image" media="(max-width: 768px)" data-srcset="./Img/Sec 2.webp" srcset="./Img/Sec 2.webp">
 
-                                            <img data-src="https://www.starbucks.co.uk/sites/starbucks-uk/files/styles/c10_2_col_text_560x467/public/2023-03/3190%20UK%20AH%20Oleato%20Digital%20Adapts%20Square%20Banner%201120x934px_v02.jpg.webp?itok=KgVxiNNq" alt="Oleato" class="fit-cover ls-is-cached lazyloaded" src="https://www.starbucks.co.uk/sites/starbucks-uk/files/styles/c10_2_col_text_560x467/public/2023-03/3190%20UK%20AH%20Oleato%20Digital%20Adapts%20Square%20Banner%201120x934px_v02.jpg.webp?itok=KgVxiNNq">
+                                            <img loading="lazy" data-src="./Img/Sec 2.webp" alt="Oleato" class="fit-cover ls-is-cached lazyloaded" src="./Img/Sec 2.webp">
                                         </picture>
                                     </div>
                                     <div class="col-m-7 col-l-6 col-l-push-1 col-m-push-1">
                                         <div class="rich-text copy-02">
-                                            <h3 class="title heading-04 bold">Introducing Oleato™</h3>
-                                            <p><p>Starbucks<sup>®</sup> coffee infused with Partanna extra virgin olive oil creates a velvety smooth, deliciously lush experience.</p></p>
-                                            <p>It's your coffee ritual uplifted.</p>
-                                            <a class="abstract-button secondary-button call-to-action js-cta secondary-button-green"><span class="copy-02 semi-bold button-label">Find out more</span></a>
+                                            <h3 class="title heading-04 bold">Summer, delivered to you</h3>
+                                            <p>Try our new handcrafted Tiramisu Cream Cold Foam - inspired by classic Italian flavours. Available blended, iced, or shaken. Available straight to your door with Starbucks® Delivers. Iced Shaken Espresso contains milk and oat drink. Subject to availability, whilst stocks last. Serveware varies from image shown. 18+. Participating stores only. T&Cs apply to delivery service (see Just Eat, Uber Eats or Deliveroo for details). Also available in-store and on the Starbucks® UK app for collection.</p>
+                                            <a class="abstract-button secondary-button call-to-action js-cta secondary-button-green"><span class="copy-02 semi-bold button-label">Orderd Now</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -168,9 +173,8 @@
                                     <div class="articles col-l-14 col-l-push-1">
                                         <article class="article">
                                             <picture class="image">
-                                                <source class="js-small-image" media="(max-width: 768px)" data-srcset="https://www.starbucks.co.uk/sites/starbucks-uk/files/styles/c06_cards_grid_mobile_503x287/public/2022-03/About%20us%20-%20Starbucks%20%281%29.jpg.webp?itok=YmyAjtks" srcset="https://www.starbucks.co.uk/sites/starbucks-uk/files/styles/c06_cards_grid_mobile_503x287/public/2022-03/About%20us%20-%20Starbucks%20%281%29.jpg.webp?itok=YmyAjtks">
-
-                                                <img data-src="https://www.starbucks.co.uk/sites/starbucks-uk/files/styles/c06_cards_grid_560x321/public/2022-03/About%20us%20-%20Starbucks%20%281%29.jpg.webp?itok=HAfHX22C" alt="C06-Starbucks-About Us" class="fit-cover ls-is-cached lazyloaded" src="https://www.starbucks.co.uk/sites/starbucks-uk/files/styles/c06_cards_grid_560x321/public/2022-03/About%20us%20-%20Starbucks%20%281%29.jpg.webp?itok=HAfHX22C">
+                                                <source class="js-small-image">
+                                                <img loading="lazy" data-src="./Img/Sec 1.webp" src="./Img/Sec 1.webp">
                                             </picture>
                                             <div class="article-detail">
                                                 <h3 class="heading-04 article-title">About Us</h3>
@@ -182,9 +186,9 @@
                                         </article>
                                         <article class="article">
                                             <picture class="image">
-                                                <source class="js-small-image" media="(max-width: 768px)" data-srcset="https://www.starbucks.co.uk/sites/starbucks-uk/files/styles/c06_cards_grid_mobile_503x287/public/2022-03/Copy-of-Headers-for-Starbucks-Stories-EMEA-7.jpg.webp?itok=4z31mGdZ" srcset="https://www.starbucks.co.uk/sites/starbucks-uk/files/styles/c06_cards_grid_mobile_503x287/public/2022-03/Copy-of-Headers-for-Starbucks-Stories-EMEA-7.jpg.webp?itok=4z31mGdZ">
+                                                <source class="js-small-image" media="(max-width: 768px)" data-srcset="./Img/Sec 3.webp" srcset="./Img/Sec 3.webp">
 
-                                                <img data-src="https://www.starbucks.co.uk/sites/starbucks-uk/files/styles/c06_cards_grid_560x321/public/2022-03/Copy-of-Headers-for-Starbucks-Stories-EMEA-7.jpg.webp?itok=vi6vO9XX" alt="C06-Starbucks-Stories" class="fit-cover ls-is-cached lazyloaded" src="https://www.starbucks.co.uk/sites/starbucks-uk/files/styles/c06_cards_grid_560x321/public/2022-03/Copy-of-Headers-for-Starbucks-Stories-EMEA-7.jpg.webp?itok=vi6vO9XX">
+                                                <img loading="lazy" data-src="./Img/Sec 3.webp" alt="C06-Starbucks-Stories" class="fit-cover ls-is-cached lazyloaded" src="./Img/Sec 3.webp">
                                             </picture>
                                             <div class="article-detail">
                                                 <h3 class="heading-04 article-title">Starbucks Stories</h3>
@@ -205,15 +209,16 @@
                             <div class="grid-15">
                                 <div class="col-l-push-1 col-l-14">
                                     <ul class="footer-menu">
-
                                         <li class="footer-menu-item">
+                                            <div class="js-collapsible-body">
                                             <div class="abstract-button collapsible-button js-collapsible-button">
                                                 <span class="heading-03">About us</span>
                                                 <button type="button" class="chevron-footer-arrow">
-                                                <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M12 17.414 3.293 8.707l1.414-1.414L12 14.586l7.293-7.293 1.414 1.414L12 17.414z"/></svg>
+                                                <svg class="footer-arrow" id="tab-1-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M12 17.414 3.293 8.707l1.414-1.414L12 14.586l7.293-7.293 1.414 1.414L12 17.414z"/></svg>
                                                 </button>
                                             </div>
-                                            <ul class="collapsible-list js-collapsible hidden">
+                                            <div class="collapsible-list">
+                                            <ul class="js-collapsible" id="tab-content-1">
                                                 <li><a href="#" class="abstract-button link-button"><span class="button-label copy-02 semi-bold">About Us</span></a></li>
                                                 <li><a href="#" class="abstract-button link-button"><span class="button-label copy-02 semi-bold">Starbucks for the Record</span></a></li>
                                                 <li><a href="#" class="abstract-button link-button"><span class="button-label copy-02 semi-bold">Our Coffees</span></a></li>
@@ -223,41 +228,49 @@
                                                 <li><a href="#" class="abstract-button link-button"><span class="button-label copy-02 semi-bold">Customer Service</span></a></li>
                                                 <li><a href="#" class="abstract-button link-button"><span class="button-label copy-02 semi-bold">Tax Strategy 2024</span></a></li>
                                             </ul>
+                                            </div>
+                                        </div>
                                         </li>
                                         <li class="footer-menu-item">
+                                            <div class="js-collapsible-body">
                                             <div class="abstract-button collapsible-button js-collapsible-button">
                                                 <span class="heading-03">Careers</span>
                                                 <button type="button" class="chevron-footer-arrow">
-                                                    <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M12 17.414 3.293 8.707l1.414-1.414L12 14.586l7.293-7.293 1.414 1.414L12 17.414z"/></svg>
+                                                    <svg class="footer-arrow" id="tab-2-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M12 17.414 3.293 8.707l1.414-1.414L12 14.586l7.293-7.293 1.414 1.414L12 17.414z"/></svg>
                                                     </button>
                                             </div>
-                                            <ul class="collapsible-list js-collapsible hidden">
+                                            <ul class="collapsible-list js-collapsible" id="tab-2-content">
                                                 <li><a href="#" class="abstract-button link-button"><span class="button-label copy-02 semi-bold">Search Careers</span></a></li>
                                             </ul>
+                                        </div>
                                         </li>
                                         <li class="footer-menu-item">
+                                            <div class="js-collapsible-body">
                                             <div class="abstract-button collapsible-button js-collapsible-button">
                                                 <span class="heading-03">Social Impact</span>
                                                 <button type="button" class="chevron-footer-arrow">
-                                                    <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M12 17.414 3.293 8.707l1.414-1.414L12 14.586l7.293-7.293 1.414 1.414L12 17.414z"/></svg>
+                                                    <svg class="footer-arrow" id="tab-3-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M12 17.414 3.293 8.707l1.414-1.414L12 14.586l7.293-7.293 1.414 1.414L12 17.414z"/></svg>
                                                     </button>
                                             </div>
-                                            <ul class="collapsible-list js-collapsible hidden">
+                                            <ul class="collapsible-list js-collapsible" id="tab-3-content">
                                                 <li><a href="#" class="abstract-button link-button"><span class="button-label copy-02 semi-bold">Responsibility</span></a></li>
                                                 <li><a href="#" class="abstract-button link-button"><span class="button-label copy-02 semi-bold">COVID-19</span></a></li>
                                             </ul>
+                                        </div>
                                         </li>
                                         <li class="footer-menu-item">
+                                            <div class="js-collapsible-body">
                                             <div class="abstract-button collapsible-button js-collapsible-button">
                                                 <span class="heading-03">Starbucks Card</span>
                                                 <button type="button" class="chevron-footer-arrow">
-                                                    <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M12 17.414 3.293 8.707l1.414-1.414L12 14.586l7.293-7.293 1.414 1.414L12 17.414z"/></svg>
+                                                    <svg class="footer-arrow" id="tab-4-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M12 17.414 3.293 8.707l1.414-1.414L12 14.586l7.293-7.293 1.414 1.414L12 17.414z"/></svg>
                                                     </button>
                                             </div>
-                                            <ul class="collapsible-list js-collapsible hidden">
+                                            <ul class="collapsible-list js-collapsible" id="tab-4-content">
                                                 <li><a href="#" class="abstract-button link-button"><span class="button-label copy-02 semi-bold">Starbucks Card</span></a></li>
                                                 <li><a href="#" class="abstract-button link-button"><span class="button-label copy-02 semi-bold">Starbucks Card Terms & Conditions</span></a></li>
                                             </ul>
+                                        </div>
                                         </li>
                                     </ul>
                                     <hr class="ui-divider">
@@ -270,10 +283,9 @@
                             </svg></span>
                             </div>
                             
-                            
                             </a>
-                                        </li>
-                                        <li class="social-list-item">
+                            </li>
+                            <li class="social-list-item">
                             <a data-element-id="social-media-pinterest" class="abstract-button icon-button" href="https://www.pinterest.co.uk/starbucksuk/" target="_blank" rel="noopener" aria-label="social-media-pinterest" data-component="icon-button">
                             <div class="icon-wrapper">
                             <span class="icon button-icon" data-component="icon" data-icon="social-media-pinterest"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
